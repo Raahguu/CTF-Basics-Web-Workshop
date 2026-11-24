@@ -1,0 +1,8 @@
+{
+  "title": "JWT Gauntlet 2",
+  "description": "Alright I thin I got the hang of this, if I specify the cipher it shoudl be good right? But now I need some other way of getting keys",
+  "attribution": "Raahguu",
+  "category": "Web X",
+  "flag": "redroomctf{K1D5_4r3_4750_1n53cur3?}",
+  "is_deployed": true
+}

@@ -1,0 +1,8 @@
+{
+  "title": "JWT Gauntlet 1",
+  "description": "Hey, I made this simple site, I think it should be secure. Man though, JWT is confusing.",
+  "attribution": "Raahguu",
+  "category": "Web X",
+  "flag": "redroomctf{Wh4t5_4lg0r1thm_c0nfu510n?}",
+  "is_deployed": true
+}

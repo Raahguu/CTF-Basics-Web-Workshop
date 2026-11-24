@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+    {% include "_style.html" %}
+</head>
+<body>
+    <h1>Book Finder</h1>
+    <p>What book would you like to find?</p>
+    <form action="/" method="GET">
+        Book: <input type="text" id="search" name="search">
+        <input type="submit" value="Submit">
+    </form>
+    {% if searched %}
+        {% if results %}
+            <h2>Results:</h2>
+            {% for book, author in results %}
+                <p class="results">Title: {{ book }} - Author: {{ author }}</p>
+            {% endfor %}
+        {% else %}
+            <p>No Results found matching: {{ search | safe}}</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,2 @@
+Disallow: /app.pyi
+Disallow: /pub

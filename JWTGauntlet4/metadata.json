@@ -1,0 +1,8 @@
+{
+  "title": "JWT Gauntlet 4",
+  "description": "Alright, no relying on the kid this time, instead we'll use a Web Key",
+  "attribution": "Raahguu",
+  "category": "Web X",
+  "flag": "redroomctf{Wh4t_d0_y0u_m34n_J50n_W3b_K3y5_5h0u7nt_b3_tru5t3d}",
+  "is_deployed": true
+}

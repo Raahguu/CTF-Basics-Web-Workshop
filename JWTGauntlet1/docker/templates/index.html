@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>North Star Solutions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f4f5f7;
+                color: #333;
+            }
+
+            nav {
+                background-color: #0f172a;
+                color: #fff;
+                padding: 0 24px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            nav .logo {
+                font-weight: bold;
+                font-size: 1.1rem;
+                letter-spacing: 0.5px;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 16px;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 0.95rem;
+                padding: 6px 10px;
+                border-radius: 4px;
+            }
+
+            nav ul li a:hover {
+                background-color: #1e293b;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .card {
+                background: #fff;
+                border-radius: 6px;
+                padding: 24px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+                margin-bottom: 24px;
+            }
+
+            .card h2 {
+                margin-top: 0;
+            }
+
+            footer {
+                text-align: center;
+                padding: 24px;
+                font-size: 0.85rem;
+                color: #666;
+            }
+
+            .download {
+                display: inline-block;
+                margin-top: 12px;
+                padding: 10px 16px;
+                background-color: #0f172a;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 0.95rem;
+            }
+
+            .download:hover {
+                background-color: #1e293b;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">North Star Solutions</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a>Donate</a></li>
+
+                {% if is_admin %}
+                <li>
+                    <a href="/admin">Admin</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="card">
+                <h2>Find Your Direction</h2>
+                <p>
+                    Here at North Star Solutions, we build applications that
+                    help you find north. And east. And west. And south.
+                </p>
+                <p>
+                    Our products are inspired by the timeless elegance of the
+                    compass. Some of them function exactly like a compass.
+                    Others look like one. A few combine both approaches.
+                </p>
+                <a class="download">Download Our Compass App</a>
+            </div>
+
+            <div class="card">
+                <h2>Our Products</h2>
+                <ul>
+                    <li>
+                        <strong>TrueNorth</strong> - a digital compass that
+                        points north
+                    </li>
+                    <li>
+                        <strong>ForeverForward</strong> - a digital compass that
+                        always points forward
+                    </li>
+                    <li>
+                        <strong>Westward</strong> - a digital compass that
+                        points west
+                    </li>
+                    <li>
+                        <strong>CosmoCompass</strong> - a decorative compass for
+                        people who enjoy circles
+                    </li>
+                    <li><strong>Compass Lite</strong> - a smaller compass</li>
+                    <li>
+                        <strong>Adventurer's Compass</strong> - a digital
+                        compass that when opened each time chooses a random
+                        direction to point in
+                    </li>
+                    <li>
+                        <strong>FreedomCompass</strong> - a world first compass
+                        with no needle
+                    </li>
+                </ul>
+                <p>
+                    All apps are free. We do not currently charge for anything.
+                    We also do not sell data, subscriptions, or physical
+                    compasses.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Our Mission</h2>
+                <p>
+                    We believe the world needs more direction. Specifically,
+                    cardinal direction.
+                </p>
+                <p>
+                    While many companies chase profits, we remain focused on
+                    perfecting the digital compass experience.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 North Star Solutions - Always Pointing Somewhere
+            <p>
+                North Star Solutions is not liable for users getting lost and
+                mauled by bears due to attempting to rely on our compasses. We
+                make no guarantees that our compasses point in the correct
+                direction.
+            </p>
+        </footer>
+    </body>
+</html>

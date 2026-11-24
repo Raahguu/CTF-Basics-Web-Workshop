@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopper</title>
+    {% include "_style.html" %}
+</head>
+<body>
+    <h1>Hopper</h1>
+    <p>The most secure place to store your secrets</p>
+    <a href="/login">Login</a>
+    {% if logged_in %}
+        <a href="/note/{{ user_id }}">Note</a>
+    {% endif %}
+</body>
+</html>

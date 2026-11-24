@@ -1,0 +1,8 @@
+{
+  "title": "One does not simply PHP Include",
+  "description": "I hear inclusion is all the rage these days. So I've been putting more of it into my projects.",
+  "category": "Web X",
+  "attribution": "Raahguu",
+  "flag": "redroomctf{Wh4t_d0_yu0_m34n_1t5_n0t_th4t_k1nd_0f_1nclu510n}",
+  "is_deployed": true
+}

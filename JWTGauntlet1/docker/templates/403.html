@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>403 Forbidden - North Star Solutions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f4f5f7;
+                color: #333;
+            }
+
+            nav {
+                background-color: #0f172a;
+                color: #fff;
+                padding: 0 24px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            nav .logo {
+                font-weight: bold;
+                font-size: 1.1rem;
+                letter-spacing: 0.5px;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 16px;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 0.95rem;
+                padding: 6px 10px;
+                border-radius: 4px;
+            }
+
+            nav ul li a:hover {
+                background-color: #1e293b;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .card {
+                background: #fff;
+                border-radius: 6px;
+                padding: 24px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+                margin-bottom: 24px;
+            }
+
+            .card h2 {
+                margin-top: 0;
+            }
+
+            footer {
+                text-align: center;
+                padding: 24px;
+                font-size: 0.85rem;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">North Star Solutions</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/donate">Donate</a></li>
+
+                {% if is_admin %}
+                <li>
+                    <a href="/admin">Admin</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="card">
+                <h2>403 — Access Forbidden</h2>
+                <p>
+                    You appear to be heading in a direction you are not
+                    authorized to go.
+                </p>
+                <p>
+                    This area is restricted. Your compass is working correctly —
+                    it’s just pointing you away from this page.
+                </p>
+                <p>
+                    If you believe this is an error, try recalibrating your
+                    permissions or returning to a known, safe direction.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 North Star Solutions — Always Pointing Somewhere
+            <p>
+                Unauthorized access attempts may result in your compass spinning
+                aimlessly.
+            </p>
+        </footer>
+    </body>
+</html>
